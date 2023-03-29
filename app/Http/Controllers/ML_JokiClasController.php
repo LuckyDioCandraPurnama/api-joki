@@ -15,6 +15,12 @@ class ML_JokiClasController extends Controller
         return response()->json($data);
     }
 
+    public function getClas()
+    {
+        $data = Clas::get();
+        return response()->json($data);
+    }
+
     public function getById($id)
     {
         $data = ML_JokiClas::where('id', '=', $id)->first();

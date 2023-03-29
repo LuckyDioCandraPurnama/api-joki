@@ -10,5 +10,5 @@ class Paket extends Model
     protected $table = 'paket_ml';
     public $timestamps = false;
 
-    protected $fillable = ['jenis','harga'];
+    protected $fillable = ['nama','jenis','harga'];
 }

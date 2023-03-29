@@ -14,6 +14,12 @@ class ML_JokiPaketController extends Controller
         return response()->json($data);
     }
 
+    public function getPaket()
+    {
+        $data = Paket::get();
+        return response()->json($data);
+    }
+
     public function getById($id)
     {
         $data = ML_JokiPaket::where('id', '=', $id)->first();

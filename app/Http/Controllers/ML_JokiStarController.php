@@ -13,6 +13,12 @@ class ML_JokiStarController extends Controller
         return response()->json($data);
     }
 
+    public function getStar()
+    {
+        $data = Star::get();
+        return response()->json($data);
+    }
+
     public function getById($id)
     {
         $data = ML_JokiStar::where('id', '=', $id)->first();

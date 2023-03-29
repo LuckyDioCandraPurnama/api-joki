@@ -26,6 +26,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // Route::get('get/{id}',[ML_JokiStarController::class, 'getById']);
 
 //PAKET
+Route::get('paket',[ML_JokiPaketController::class, 'getPaket']);
+Route::get('star',[ML_JokiStarController::class, 'getStar']);
+Route::get('clas',[ML_JokiClasController::class, 'getClas']);
 
 //JOKI PAKET
 Route::get('rank-pack',[ML_JokiPaketController::class, 'getAll']);
